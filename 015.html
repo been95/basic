@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child { color:red;}
+        li:last-child { color:blue;}
+        li:nth-child(3) { color:green; }
+        li:nth-child(5) { color:pink;}
+        li:nth-child(4n-1){/*3의배수*/
+				font-size:30px;
+		}
+				tr:nth-child(even) {
+            background-color:pink;
+            /* 짝수번 째 */
+        }
+
+        tr:nth-child(odd) {
+            background-color:beige;
+            /* 홀수번 째 */
+        }
+
+        li:not(:first-child) {
+            background-color:gray;
+        }
+
+        .wrap:not(p) {
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">div</div>
+    <p class="wrap">P</p>
+    <article class="wrap">Article</article>
+    
+    <article class="box">
+        <p>Paragraph</p>
+        <div>BOX 1</div>
+        <strong>STRONG</strong>
+        <div>BOX 2</div>
+        <p>두번째 p태그</p>
+        <div>BOX 3</div>
+    </article>
+    <ul>
+        <li>LIST 1</li>
+        <li>LIST 2</li>
+        <li>LIST 3</li>
+        <li>LIST 4</li>
+        <li>LIST 5</li>
+        <li>LIST 6</li>
+    </ul>
+    <table>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Title</th>
+            <th scope="col">Title</th>
+            <th scope="col">Title</th>
+            <th scope="col">Title</th>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+        <tr>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+            <td>CONTENTS</td>
+        </tr>
+    </table>
+</body>
+</html>

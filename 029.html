@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <style>
+      .list {
+        width: 750px;
+        border: 1px solid #ccc;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      .list li {
+        border: 1px solid #ccc;
+        border-width: 0 1px 1px 0;
+        box-sizing: border-box;
+      }
+
+      .list li:nth-child(6n) {
+        border-right: 0;
+      }
+      .list li a {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .list li a img {
+        height: 20px;
+      }
+
+      footer {
+        height: 100px;
+        background: coral;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_0.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_1.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_2.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_3.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_4.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_5.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_6.png" alt="" />
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/naver_news_7.png" alt="" />
+        </a>
+      </li>
+    </ul>
+    <footer>footer</footer>
+  </body>
+</html>

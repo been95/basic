@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>anchor tag</title>
+	<style>
+		section{
+			width: 50%;
+			border: 1px solid #d8d8d8;
+			padding: 50px;
+			line-height: 2.5;	
+			margin: 50px auto;
+		}
+		#book_info{
+			background-color: rgb(223, 245, 241);
+		}
+		#book_review{
+			background-color: rgb(245, 235, 233);
+		}
+		#book_delivery{
+			background-color: rgb(255, 252, 226);
+		}
+		.gnb{
+			background-color:rgba(0,0,0,0.7);
+			position:fixed;
+			left: 0;top: 0;
+			width: 100%;
+			text-align: center;
+			
+		}
+		.gnb a{
+			color: #fff;
+			font-size: 20px;
+			font-weight: 600;
+			text-decoration: none;
+			line-height: 50px;
+			margin:0 20px
+		}
+		.gnb a:hover{
+			color: dodgerblue;
+		}
+		p img{
+			/*max-width: 30%;/*최대값*/
+			width: calc((100% - 20px) / 3);
+		}
+	</style>
+</head>
+<body>
+	<h1>yes24</h1>
+	<nav class="gnb">
+		<a href="#book_info">도서정보</a>
+		<a href="#book_review">리뷰/한줄평</a>
+		<a href="#book_delivery">배송/반품/교환</a>
+	</nav>
+	<hr>
+	<section id="book_info">
+		<h2>도서정보</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, laborum. Atque, rem, fuga perspiciatis dolores quidem deleniti ab architecto amet veritatis culpa magnam tenetur a molestias pariatur modi, mollitia quaerat?
+		<br>
+		Dolore distinctio quaerat a ut, repellat odio libero assumenda repudiandae eaque, asperiores aspernatur vel ratione debitis cupiditate, amet tempora ipsum qui suscipit provident similique ea ipsa voluptate. Libero, saepe molestias.
+		<a href="http://www.naver.com">
+			<img src="./images/thum_0.jpg" alt="자동차">
+		</a>
+		<a href="http://www.nate.com">
+			<img src="./images/thum_1.jpg" alt="자동차">
+		</a>
+		<a href="http://www.daum.net">
+			<img src="./images/thum_2.jpg" alt="자동차">
+		</a>
+		<br>
+		Debitis reprehenderit quisquam consequuntur voluptates impedit! Similique incidunt deleniti quisquam aspernatur? Pariatur excepturi ipsum unde in accusantium, eaque omnis, repellendus vel, eos quos incidunt aspernatur perferendis? Omnis aperiam nostrum quod?
+	</p>
+	</section>
+	<section id="book_review">
+		<h2>리뷰한줄평</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, laborum. Atque, rem, fuga perspiciatis dolores quidem deleniti ab architecto amet veritatis culpa magnam tenetur a molestias pariatur modi, mollitia quaerat?
+		<br>
+		Dolore distinctio quaerat a ut, repellat odio libero assumenda repudiandae eaque, asperiores aspernatur vel ratione debitis cupiditate, amet tempora ipsum qui suscipit provident similique ea ipsa voluptate. Libero, saepe molestias.
+		<br>
+		Debitis reprehenderit quisquam consequuntur voluptates impedit! Similique incidunt deleniti quisquam aspernatur? Pariatur excepturi ipsum unde in accusantium, eaque omnis, repellendus vel, eos quos incidunt aspernatur perferendis? Omnis aperiam nostrum quod?
+	</p>
+	<figure>
+		<img src="./images/document.jpg" alt="내가만든문서" usemap="#docs">
+
+		<map name="docs">
+				<area shape="rect" coords="20,30,62,71" alt="004문서로이동" href="./004.html">
+				<area shape="poly" coords="138,27,166,78,108,77" alt="005문서로이동" href="./views/005.html">
+				<area shape="circle" coords="242,53,30" alt="006문서로이동" href="./006.html">
+		</map>
+		<figcaption>Image Map Sample</figcaption>
+	</figure>
+	</section>
+	<section id="book_delivery">
+		<h2>배송/반품/교환</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, laborum. Atque, rem, fuga perspiciatis dolores quidem deleniti ab architecto amet veritatis culpa magnam tenetur a molestias pariatur modi, mollitia quaerat?
+		<br>
+		Dolore distinctio quaerat a ut, repellat odio libero assumenda repudiandae eaque, asperiores aspernatur vel ratione debitis cupiditate, amet tempora ipsum qui suscipit provident similique ea ipsa voluptate. Libero, saepe molestias.
+		<br>
+		Debitis reprehenderit quisquam consequuntur voluptates impedit! Similique incidunt deleniti quisquam aspernatur? Pariatur excepturi ipsum unde in accusantium, eaque omnis, repellendus vel, eos quos incidunt aspernatur perferendis? Omnis aperiam nostrum quod?
+	</p>
+	</section>
+	<a href="#" class="btnTop">위로가기</a>
+</body>
+</html>

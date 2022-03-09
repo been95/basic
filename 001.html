@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal {
+        background: rgba(0, 0, 0, 0.7);
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+      }
+
+      .modal p {
+        background: #fff;
+        color: coral;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        font-size: 100px;
+        font-weight: 600;
+      }
+
+      .btnClose {
+        position: absolute;
+        right: 100px;
+        top: 100px;
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-weight: 600;
+        font-size: 30px;
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+
+      .btnClose:hover {
+        color: coral;
+      }
+      .openModal {
+        background: coral;
+        color: #fff;
+        border-radius: 30px;
+        height: 50px;
+        border: none;
+        width: 200px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 30px;
+        transition: all 0.4s;
+        cursor: pointer;
+      }
+      .openModal:hover {
+        background: olive;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="#">네이버</a></h1>
+    <div class="accNav">
+      <a href="#">네이버를 시작페이지로</a>
+      <a href="#">쥬니어네이버</a>
+      <a href="#">해피빈</a>
+    </div>
+
+    <form action="./result.html" method="">
+      <fieldset>
+        <legend>검색</legend>
+        <select>
+          <option>통합검색</option>
+          <option>카페</option>
+          <option>블로그</option>
+          <optgroup label="스마트파인더">
+            <option>영화</option>
+            <option>자동차</option>
+            <option>게임</option>
+            <option>건강</option>
+            <option>인물</option>
+          </optgroup>
+          <optgroup label="네이버 랩">
+            <option>긍정부정검색</option>
+          </optgroup>
+        </select>
+        <input type="search" placeholder="검색어를 입력해 주세요." required />
+        <button type="submit">검색</button>
+        <button type="button" onClick="login();">Log in</button>
+      </fieldset>
+    </form>
+
+    <ul>
+      <li><a href="#">메일</a></li>
+      <li><a href="#">카페</a></li>
+      <li><a href="#">블로그</a></li>
+    </ul>
+
+    <dl>
+      <dt>ㄱ~ㅁ</dt>
+      <dd><a href="#">날씨</a></dd>
+      <dd><a href="#">네이버마이키</a></dd>
+      <dd><a href="#">네이버게임</a></dd>
+
+      <dt>ㅂ~ㅅ</dt>
+      <dd><a href="#">밴드</a></dd>
+      <dd><a href="#">부동산</a></dd>
+      <dd><a href="#">북마크</a></dd>
+    </dl>
+
+    <h2>주제별 캐스트</h2>
+    <ul>
+      <li>
+        <a href="#"> <img src="./images/thum_0.jpg" alt="건물" /></a>
+        <a href="#"
+          ><i>재생</i> 재시간 <em>01:18 명장면</em> <b><q>승리가 보인다</q> 4세트 후반결정</b></a
+        >
+      </li>
+      <li>
+        <a href="#"> <img src="./images/thum_1.jpg" alt="건물" /></a>
+        <a href="#"
+          ><i>재생</i> 재시간 <em>01:18 명장면</em> <b><q>승리가 보인다</q> 4세트 후반결정</b></a
+        >
+      </li>
+      <li>
+        <a href="#"> <img src="./images/thum_2.jpg" alt="건물" /></a>
+        <a href="#"
+          ><i>재생</i> 재시간 <em>01:18 명장면</em> <b><q>승리가 보인다</q> 4세트 후반결정</b></a
+        >
+      </li>
+    </ul>
+    <button type="button" class="openModal">모달창열기</button>
+
+    <div class="modal">
+      <p>Hello World</p>
+      <button type="button" class="btnClose">CLOSE</button>
+    </div>
+
+    <script>
+      function login() {
+        alert("Logged In");
+      }
+
+      function openModal() {
+        var modal = document.querySelector(".modal");
+        var btn = document.querySelector(".openModal");
+        var close = document.querySelector(".btnClose");
+        btn.addEventListener("click", function () {
+          modal.style.display = "flex";
+        });
+
+        close.addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+      }
+
+      openModal();
+    </script>
+  </body>
+</html>

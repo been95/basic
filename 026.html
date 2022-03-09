@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header,
+      footer {
+        height: 100px;
+        background-color: olive;
+        color: #fff;
+        text-align: center;
+      }
+
+      article {
+        background-color: red;
+        color: yellow;
+      }
+      footer {
+        background-color: dodgerblue;
+      }
+
+      .wrap {
+        background-color: coral;
+        width: 400px;
+      }
+
+      .wrap div {
+        width: 25%;
+      }
+
+      .wrap .a {
+        background-color: skyblue;
+        float: left;
+      }
+      .wrap .b {
+        background-color: gold;
+        float: left;
+      }
+      .wrap .c {
+        background-color: violet;
+        float: left;
+      }
+      .wrap .d {
+        background-color: green;
+        float: left;
+      }
+
+      .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .box {
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .box img {
+        width: 200px;
+        float: right;
+      }
+
+      .box p {
+        clear: both;
+      }
+
+      .box .img {
+        float: none;
+      }
+    </style>
+  </head>
+  <body>
+    <article></article>
+    <header>HEADER</header>
+    <div class="wrap clearfix">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+    </div>
+    <footer>FOOTER</footer>
+
+    <div class="box clearfix">
+      <img src="./images/dummy_0.jpg" />
+      <h2>HELLO WORLD</h2>
+      <p>lorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur</p>
+    </div>
+    <div class="box clearfix">
+      <img src="./images/dummy_0.jpg" class="img" />
+      <h2>HELLO WORLD</h2>
+      <p>lorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur</p>
+    </div>
+  </body>
+</html>

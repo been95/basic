@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+			<style>
+				a{
+					color: inherit;
+					text-decoration: none;;
+				}
+				button{
+					width: 150px;
+					height: 48px;
+					border-radius: 7px;
+					/*background-image: url('./images/arrow_right.png');
+					background-repeat: no-repeat;
+					background-size:30px;
+					background-position: center right;
+					background-color: gold;*/
+					background: gold url('./images/arrow_right.png') no-repeat right 15px center/20px ;
+					color: white;
+					border:none;
+					text-align:left;
+					padding-left:15px;
+					cursor:pointer;
+					transition:0.5s;
+					box-shadow:0 0 5px 2px rgba(154, 85, 108, 0.5) inset,5px 5px 0 rgba(0,0,0,0.2);
+				}
+				button:hover{
+					background-position: right 5px center;
+				}
+				h1{
+					background-color: #555;
+					border-radius:10px 20px 30px 40px;
+					color:rgb(140,246,214);
+					text-align:center;
+					padding:50px 0;
+					font-size:70px;
+					margin:50px;
+					/*text-shadow:-1px -1px 0 #222, 1px 1px 0 rgb(184, 255, 234);*/
+					text-shadow:10px 10px 5px rgba(0,0,0,0.8);
+				}
+				.floatBtn{
+					position:fixed;
+					right: 20px;
+					bottom:40px;
+					display:flex;
+				}
+				.floatBtn a{
+					height: 50px;
+					background-color: #f3f3f3;
+					box-shadow:0 2px 2px rgba(0,0,0,0.2);
+					text-align: center;
+					transition:0.5s;
+					display:flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 12px;
+				}
+				.floatBtn .material-icons{
+					font-size: 18px;
+				}
+				.floatBtn .star{
+					width: 50px;
+					border-radius:50%;
+				}
+				.floatBtn .star:hover{
+					background-color: pink;
+					color:#fff;
+				}
+				.floatBtn .moon{
+					border-radius:50px;
+					padding:0 15px;
+					margin-right:20px;
+				}
+				.floatBtn .moon:hover{
+					background-color:gray;
+				}
+				.floatBtn .moon:hover i{
+					color: yellow;
+				}
+				.floatBtn .moon:hover span{
+					color: white;
+				}
+				.floatBtn .moon span{
+					padding-left: 5px;
+				}
+			</style>
+</head>
+<body>
+	<div class="floatBtn">
+		<a href="#" class="moon">
+			<i class="material-icons">
+				grade
+			</i>
+			<span>다크모드로 보기</span>
+		</a>
+		<a href="#" class="star">
+			<i class="material-icons">
+				nightlight_round
+			</i>
+		</a>
+	</div>
+	<h1>
+		text-shadow
+	</h1>
+	<i class="material-icons">
+		arrow_circle_right
+	</i>
+	<i class="material-icons">close</i>
+
+
+	<button type="button" class="btnNext">
+		VIEW DETAILS
+	</button>
+</body>
+</html>

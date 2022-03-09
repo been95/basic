@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		h1{
+			color: red;
+		}
+		.logo{
+			color: blue;/*0,0,1,0*/
+		}
+		#logo{
+			color:green;
+		}
+		p.logo{
+			color:orange;
+		}
+		h1.title{
+			color:violet;/*0,0,1,1*/
+		}
+		h1.title.logo{
+			color:gray;/*0,0,2,1*/
+		}
+	</style>
+</head>
+<body>
+	우선순위
+	1. 선택자가 동일할때 나중에 선언된 것이 우선순위가 높다.
+	2. 태그선택자 < 클래스선택자 < 아이디선택자 < 인라인스타일<!important(강제)
+	3. 특정도가 높은것
+	태그선택자 = 0,0,0,1
+	클래스선택자 = 0,0,1,0
+	아이디선택자 = 0,1,0,0
+	인라인선택자 = 1,0,0,0
+	<h1 class="logo" id="logo">Logo</h1>
+	<h1 class="logo title">Logo, title</h1>
+	<h1 class="logo">only class logo</h1>
+	<h1>HELLO WORLD</h1>
+	<p class="logo">paragraph logo</p>
+	<p class="title">paragraph title</p>
+	
+
+</body>
+</html>

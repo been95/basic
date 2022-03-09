@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		h2{
+			text-align: center;
+			margin-bottom: 40px;
+			font-size: 16px;
+			font-weight: 200;
+		}
+		.slideWrap{
+			width: 90%;
+			height: 400px;
+			background-image: url('./images/dummy_1.jpg');
+		 	outline:1px solid red;
+			margin: 0 auto;
+			background-size: cover;
+			position: relative;
+		}
+		.slideWrap .btn{
+			border-radius: 50%;
+			background-color: rgba(0,0,0, 0.5);
+			border: none;
+			width: 50px;
+			height: 50px;
+			color: #fff;
+			position:absolute;
+			top:calc(50% - 25px);
+		}
+		.prev{
+			left:-25px;
+		}
+		.next{
+			right:-25px;
+		}
+	</style>
+</head>
+<body>
+	<h1>빈블</h1>
+	<h2>THE SPECIAL PTCKS</h2>
+	<div class="slideWrap">
+		<button type="button" class="btn prev">p</button>
+		<button type="button" class="btn next">n</button>
+	</div>
+</body>
+</html>
