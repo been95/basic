@@ -1,35 +1,140 @@
 @charset "utf-8";
-.wrap {
-  background-color: #f2f2f2;
-}
-header {
-  position: relative;
-}
-.header h1,
-.header h2,
-.header p {
-  padding-top: 62px;
-  padding-left: 166px;
-}
-header a {
-  display: block;
+
+body {
+  background: url("../images/bg-main-desktop.png") no-repeat right top/contain;
 }
 
-.header a::before {
-  background-image: url("../images/logo.svg");
-  background-repeat: no-repeat;
+.header {
+  padding-right: 200px;
+  letter-spacing: -1px;
 }
-.header span {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-}
+
 .header h2 {
   font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 50px;
 }
-.header img {
+
+.header p {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.wrap {
+  width: 1100px;
+  margin: 60px auto;
+}
+
+img.pattern {
   position: absolute;
-  top: -38px;
-  left: 1180px;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.main {
+  position: relative;
+  background: #191826 url("../images/bg-pattern-2.svg") no-repeat 330px top;
+  height: 600px;
+  border-radius: 10px 10px 0 10px;
+  margin: 330px 0;
+}
+.main img {
+  width: 312px;
+  position: absolute;
+  left: 92px;
+  top: -215px;
+}
+
+.main_box {
+  width: 446px;
+  box-sizing: border-box;
+  background-color: #fa7453;
+  position: absolute;
+  right: 92px;
+  top: 88px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 48px;
+}
+.main_box h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.main_box p {
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.main_box strong {
+  font-size: 65px;
+}
+
+.main .btn {
+  border-radius: 10px;
+  width: 333px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .btn::before {
+  content: "";
+  background-image: url("../images/icon-apple.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 20px;
+  margin-right: 8px;
+}
+.main .btn.black {
+  background-color: #191826;
+  margin-bottom: 18px;
+}
+
+.main .btn.black:hover {
+  background-color: #66e2dc;
+}
+
+.main .btn.white {
+  background-color: #fff;
+  color: #000;
+}
+
+.main .btn.white::before {
+  background-image: url("../images/icon-android.svg");
+}
+
+.main .btn.white:hover {
+  background-color: #ffb964;
+}
+
+@media all and (max-width: 768px) {
+  .wrap {
+    width: auto;
+    margin: 0 33px;
+  }
+  body {
+    background-image: url("../images/bg-main-tablet.png");
+  }
+
+  .header {
+    padding-right: 15vw;
+  }
+  .header h2 {
+    font-size: 8.3vw; /* 64px; */
+  }
+}
+@media all and (max-width: 375px) {
+  body {
+    background-image: url("../images/bg-main-mobile.png");
+  }
+  img.pattern {
+    display: none;
+  }
+
+  .header h2 {
+    font-size: 10.6vw /* 40px*/;
+  }
 }
