@@ -41,7 +41,7 @@ img.pattern {
 }
 .main img {
   width: 312px;
-  position: absolute;
+  position: relative;
   left: 92px;
   top: -215px;
 }
@@ -109,6 +109,24 @@ img.pattern {
 .main .btn.white:hover {
   background-color: #ffb964;
 }
+.footer_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_wrap p {
+  width: 366px;
+  margin-left: -138px;
+}
+
+.footer_wrap ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+.footer_wrap ul li a:hover {
+  color: #fa7453;
+}
 
 @media all and (max-width: 768px) {
   .wrap {
@@ -125,6 +143,18 @@ img.pattern {
   .header h2 {
     font-size: 8.3vw; /* 64px; */
   }
+  .main {
+    background-size: 29.6875vw;
+  }
+  .main img {
+    width: 35.1563vw;
+  }
+  .main_box {
+    width: 51.9531vw;
+  }
+  .main .btn {
+    width: 38.5417vw;
+  }
 }
 @media all and (max-width: 375px) {
   body {
@@ -136,5 +166,8 @@ img.pattern {
 
   .header h2 {
     font-size: 10.6vw /* 40px*/;
+  }
+  .main {
+    background-image: none;
   }
 }
