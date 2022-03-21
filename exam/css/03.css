@@ -157,6 +157,10 @@ img.pattern {
   }
 }
 @media all and (max-width: 375px) {
+  .wrap {
+    width: auto;
+    margin: 0;
+  }
   body {
     background-image: url("../images/bg-main-mobile.png");
   }
@@ -169,5 +173,15 @@ img.pattern {
   }
   .main {
     background-image: none;
+  }
+  .main_box {
+    position: static;
+    width: auto;
+  }
+  .main_box h3 {
+    font-size: 8.5333vw;
+  }
+  .main_box p {
+    font-size: 4.8vw;
   }
 }
