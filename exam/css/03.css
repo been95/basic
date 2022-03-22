@@ -14,6 +14,7 @@ body {
   font-weight: 700;
   line-height: 1;
   margin-bottom: 50px;
+  margin-top: 140px;
 }
 
 .header p {
@@ -37,7 +38,7 @@ img.pattern {
   background: #191826 url("../images/bg-pattern-2.svg") no-repeat 330px top;
   height: 600px;
   border-radius: 10px 10px 0 10px;
-  margin: 330px 0;
+  margin: 330px auto;
 }
 .main img {
   width: 312px;
@@ -143,18 +144,8 @@ img.pattern {
   .header h2 {
     font-size: 8.3vw; /* 64px; */
   }
-  .main {
-    background-size: 29.6875vw;
-  }
-  .main img {
-    width: 35.1563vw;
-  }
-  .main_box {
-    width: 51.9531vw;
-  }
-  .main .btn {
-    width: 38.5417vw;
-  }
+  
+
 }
 @media all and (max-width: 375px) {
   .wrap {
@@ -172,7 +163,11 @@ img.pattern {
     font-size: 10.6vw /* 40px*/;
   }
   .main {
-    background-image: none;
+    background-size: 74.6667vw;
+    background-position: center top;
+  }
+  .main img{
+    width: 208.97px;
   }
   .main_box {
     position: static;
