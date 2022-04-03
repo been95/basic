@@ -1,0 +1,18 @@
+@mixin flex($j: space-between, $a: null) {
+  display: flex;
+  justify-content: $j;
+  align-items: $a;
+}
+@mixin circle($s, $c) {
+  width: $s;
+  height: $s;
+  border-radius: 50%;
+  background-color: $c;
+}
+
+@mixin center($pos) {
+  position: $pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

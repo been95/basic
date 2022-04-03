@@ -1,0 +1,265 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.test {
+  z-index: 999;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background: url("../images/bg-main-desktop.png") no-repeat right top/contain;
+}
+
+img.pattern {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.wrap {
+  width: 1100px;
+  margin: 60px auto;
+}
+
+.header {
+  padding-right: 200px;
+  letter-spacing: -1px;
+}
+.header h2 {
+  font-size: 88px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 50px;
+  margin-top: 140px;
+}
+.header p {
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.main {
+  position: relative;
+  background: #191826 url("../images/bg-pattern-2.svg") no-repeat 330px top;
+  /* height: 600px; */
+  border-radius: 10px 10px 0 10px;
+  margin: 330px auto;
+}
+.main img {
+  width: 312px;
+  position: relative;
+  left: 92px;
+  top: -215px;
+}
+.main .main_box {
+  width: 446px;
+  box-sizing: border-box;
+  background-color: #fa7453;
+  position: absolute;
+  right: 92px;
+  top: 88px;
+  border-radius: 10px;
+  color: #fff;
+  padding: 48px;
+}
+.main .main_box h3 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.main .main_box p {
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 35px;
+  margin-bottom: 45px;
+}
+.main .main_box strong {
+  font-size: 65px;
+}
+.main .btn {
+  border-radius: 10px;
+  width: 333px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .btn::before {
+  content: "";
+  background-image: url("../images/icon-apple.svg");
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 20px;
+  margin-right: 8px;
+}
+.main .btn.black {
+  background-color: #191826;
+  margin-bottom: 18px;
+}
+.main .btn.black:hover {
+  background-color: #66e2e0;
+}
+.main .btn.white {
+  background-color: #fff;
+  color: #000;
+}
+.main .btn.white:before {
+  background-image: url("../images/icon-android.svg");
+}
+.main .btn.white:hover {
+  background-color: #ffb964;
+}
+
+.footer_wrap {
+  padding: 0 0 50px;
+}
+.footer_wrap .footer_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_wrap .contact {
+  flex-grow: 1;
+  margin-left: 178px;
+}
+.footer_wrap ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_wrap ul li:not(:first-child) {
+  padding-left: 20px;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    background-image: url("../images/bg-main-tablet.png");
+  }
+
+  .wrap {
+    width: auto;
+    margin: 0 33px;
+  }
+
+  .main {
+    margin-bottom: 120px;
+  }
+
+  .header {
+    padding-right: 15vw;
+  }
+  .header h2 {
+    font-size: 8.3vw;
+    /* 64px; */
+  }
+
+  .footer_inner {
+    flex-wrap: wrap;
+  }
+  .footer_inner h2 {
+    flex-basis: 100%;
+    margin: 0 0 30px;
+  }
+  .footer_inner .contact {
+    margin: 0;
+  }
+}
+@media all and (max-width: 375px) {
+  .wrap {
+    width: auto;
+    margin: 0;
+  }
+
+  body {
+    background-image: url("../images/bg-main-mobile.png");
+  }
+
+  img.pattern {
+    display: none;
+  }
+
+  .header {
+    margin: 0 33px;
+  }
+  .header h1 {
+    margin-top: 39.99px;
+  }
+  .header h2 {
+    font-size: 10.6vw;
+    margin-top: 70px;
+  }
+
+  .main {
+    background-size: 74.6667vw;
+    background-position: center top;
+    margin: 174px auto 150px;
+    /*main-box*/
+  }
+  .main img {
+    width: 208.97px;
+    top: -100px;
+  }
+  .main .main_box {
+    position: static;
+    width: auto;
+  }
+  .main .main_box h3 {
+    font-size: 8.5333vw;
+  }
+  .main .main_box p {
+    font-size: 4.8vw;
+  }
+  .main .btn {
+    width: 296px;
+  }
+
+  .footer_inner {
+    display: block;
+    padding: 0 20px;
+  }
+  .footer_inner .contact {
+    margin-bottom: 50px;
+  }
+  .footer_inner .contact br {
+    display: none;
+  }
+  .footer_inner ul {
+    justify-content: flex-start;
+  }
+}
+
+/*# sourceMappingURL=03.css.map */
