@@ -36,7 +36,7 @@ img.pattern {
 .main {
   position: relative;
   background: #191826 url("../images/bg-pattern-2.svg") no-repeat 330px top;
-  height: 600px;
+  /* height: 600px; */
   border-radius: 10px 10px 0 10px;
   margin: 330px auto;
 }
@@ -111,31 +111,39 @@ img.pattern {
   background-color: #ffb964;
 }
 .footer_wrap {
+  padding: 0 0 50px;
+}
+
+.footer_inner {
   display: flex;
   justify-content: space-between;
 }
-.footer_wrap p {
-  width: 366px;
-  margin-left: -138px;
+
+.footer_wrap .contact {
+  flex-grow: 1;
+  margin-left: 178px;
 }
 
 .footer_wrap ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
 }
-.footer_wrap ul li{
-  padding: 0 20px;
+.footer_wrap ul li:not(:first-child) {
+  padding-left: 20px;
 }
 
 @media all and (max-width: 768px) {
+  body {
+    background-image: url("../images/bg-main-tablet.png");
+  }
   .wrap {
     width: auto;
     margin: 0 33px;
   }
-  body {
-    background-image: url("../images/bg-main-tablet.png");
+
+  .main {
+    margin-bottom: 120px;
   }
 
   .header {
@@ -144,8 +152,18 @@ img.pattern {
   .header h2 {
     font-size: 8.3vw; /* 64px; */
   }
-  
-
+  .footer_inner {
+    flex-wrap: wrap;
+  }
+  .footer_inner h2 {
+    flex-basis: 100%;
+    margin: 0 0 30px;
+  }
+  .footer_inner .contact {
+    margin: 0;
+  }
+  .footer_inner ul {
+  }
 }
 @media all and (max-width: 375px) {
   .wrap {
@@ -155,14 +173,14 @@ img.pattern {
   body {
     background-image: url("../images/bg-main-mobile.png");
   }
-  
+
   img.pattern {
     display: none;
   }
-  .header{
-    margin:0 33px;
+  .header {
+    margin: 0 33px;
   }
-  .header h1{
+  .header h1 {
     margin-top: 39.99px;
   }
   .header h2 {
@@ -172,16 +190,15 @@ img.pattern {
   .main {
     background-size: 74.6667vw;
     background-position: center top;
-    margin-top: 174px;
+    margin: 174px auto 150px;
   }
-  .main img{
+  .main img {
     width: 208.97px;
-    top:-100px;
+    top: -100px;
   }
   .main_box {
     position: static;
     width: auto;
-    
   }
   .main_box h3 {
     font-size: 8.5333vw;
@@ -189,11 +206,23 @@ img.pattern {
   .main_box p {
     font-size: 4.8vw;
   }
-  .main .btn{
+  .main .btn {
     width: 296px;
   }
-  footer{
-    flex-direction: column;
+  .footer_inner {
+    display: block;
+    padding: 0 20px;
   }
 
+  .footer_inner .contact {
+    margin-bottom: 50px;
+  }
+
+  .footer_inner .contact br {
+    display: none;
+  }
+
+  .footer_inner ul {
+    justify-content: flex-start;
+  }
 }
