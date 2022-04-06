@@ -1,0 +1,20 @@
+.pageHeader {
+  background-color: yellow;
+}
+
+.pageHeader h1 {
+  color: orange;
+}
+
+.pageHeader h1::after, .pageHeader h1::before {
+  content: "-";
+}
+
+.pageHeader > a {
+  color: red;
+}
+
+.pageHeader li a {
+  color: olive;
+}
+/*# sourceMappingURL=035.css.map */
