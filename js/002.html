@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">HELLO</h1>
+    <h2>WORLD</h2>
+    <script>
+      const a = 3;
+      const b = "3";
+      const c = true;
+      const d = null;
+      const e = undefined;
+      const h1 = document.getElementById("title");
+      const h2 = document.getElementsByTagName("h2");
+
+      console.log(typeof a);
+      console.log(typeof b);
+      console.log(typeof c);
+      console.log(typeof d);
+      console.log(typeof e);
+      console.log("h1" + typeof h1);
+      console.log("h2" + typeof h2);
+
+      if (d) {
+        console.log("null is true");
+      } else {
+        console.log("null is false");
+      }
+
+      if (e) {
+        console.log("undefined is true");
+      }
+    </script>
+  </body>
+</html>
