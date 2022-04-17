@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      3 > 5 ? console.log("3 is big") : console.log("3 is not big");
+
+      let math = parseInt(prompt("Input math score"));
+      let kor = parseInt(prompt("Input kor score"));
+      let eng = parseInt(prompt("Input eng score"));
+
+      let total = math + kor + eng;
+      let avg = total / 3;
+      console.log(avg);
+
+      //  condition  ?  true : false;
+      avg >= 70 ? console.log("합격") : console.log("불합격");
+    </script>
+  </body>
+</html>
