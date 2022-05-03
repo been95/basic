@@ -7,24 +7,24 @@
     <title>Document</title>
   </head>
   <body>
+    <h1>0503</h1>
+    <input type="text" class="dan" placeholder="Enter a number" />
+    <button type="button" onclick="gugudan();">RUN GUGUDAN</button>
+    <hr />
+    <h2>Message Example</h2>
+    <input type="text" class="msg" />
+    <button type="button" class="btnMsg" onclick="msgPrint();">Write Message</button>
     <script>
-      let a = 3;
-      let b = 3;
-
-      if (a > b) {
-        console.log("a는 크다");
-      } else if (b > a) {
-        console.log("b가 크다");
-      } else {
-        console.log("a and b are same.");
+      function gugudan() {
+        let dan = parseInt(document.querySelector(".dan").value);
+        for (let i = 1; i <= 9; i++) {
+          console.log(`${dan} * ${i} = ${i * dan}`);
+        }
       }
 
-      if (a == b) {
-        // same
-      } else if (a > b) {
-        // a is big
-      } else {
-        // b is big
+      function msgPrint() {
+        let msg = document.querySelector(".msg");
+        console.log(msg.value);
       }
     </script>
   </body>
