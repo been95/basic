@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      textarea {
+        display: block;
+        margin: 50px auto;
+        width: 90%;
+        height: 200px;
+        border: 1px solid #e8e8e8;
+        background-color: #f5f6f7;
+        color: rgb(67, 67, 173);
+        font-size: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" class="name" value="hello world" />
+    <textarea class="comment" placeholder="Leave comment"></textarea>
+    <button type="button" class="btn">add Comment</button>
+    <ul id="list"></ul>
+
+    <script>
+      const name = document.querySelector(".name");
+      const comment = document.querySelector(".comment");
+      const ul = document.querySelector("#list");
+      const button = document.querySelector(".btn");
+
+      button.addEventListener("click", function () {
+        let message = comment.value;
+        let commentList = ul.innerHTML;
+        ul.innerHTML = commentList + `<li>${message}</li>`;
+      });
+    </script>
+  </body>
+</html>

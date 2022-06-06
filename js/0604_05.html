@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .area {
+        border: 1px solid #e8e8e8;
+        background-color: #f5f6f7;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 50px auto;
+        width: 80%;
+        font-size: 20px;
+        color: dodgerblue;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">hello</div>
+    <!-- 
+    <button type="button" class="btn1" onclick="print('apple mango')">CLICK</button>
+		-->
+    <input type="text" placeholder="enter message" class="txt" />
+    <button type="button" class="btn2">CLICK</button>
+
+    <script>
+      const btn1 = document.querySelector(".btn1");
+      const btn2 = document.querySelector(".btn2");
+      const txt = document.querySelector(".txt");
+      const area = document.querySelector(".area");
+      console.log(btn1, typeof btn1);
+
+      function print(msg) {
+        area.innerHTML = msg;
+      }
+
+      btn2.addEventListener("click", function () {
+        let message = txt.value;
+        if (message.value == "") {
+          alert("enter a text");
+          return false;
+        }
+        area.innerHTML = message;
+      });
+    </script>
+  </body>
+</html>

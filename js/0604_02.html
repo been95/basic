@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>First h1</h1>
+    <h2>HELLO WORLD</h2>
+    <h1>Second h1</h1>
+    <h1>Third h1</h1>
+    <h3 id="heading3">Heading h3</h3>
+    <h3 id="heading3-2">Heading h3-2</h3>
+    <h4 class="apple">Apple 1</h4>
+    <h4 class="apple">Apple 2</h4>
+    <h4 class="apple">Apple 3</h4>
+    <script>
+      const tagH1 = document.querySelectorAll("h1");
+      console.log(tagH1);
+
+      const all = document.querySelectorAll(".apple");
+      console.log(all);
+      all[0].style.color = "red";
+      all[2].innerHTML = "<em>Real Apple</em>";
+
+      const h4 = document.querySelector(".apple");
+      console.log(h4);
+
+      const h3_2 = document.querySelector("#heading3-2");
+      console.log(typeof h3_2);
+      console.log(h3_2.innerHTML);
+      h3_2.innerHTML = "BANANA";
+
+      const h3 = document.getElementById("heading3");
+      console.log(h3);
+      h3.style.fontStyle = "italic";
+      const h1 = document.getElementsByTagName("h1");
+      console.log(h1);
+      // Css styling in javascript
+      h1[0].style.color = "red";
+      h1[0].style.fontSize = "100px";
+      h1[1].style.color = "yellow";
+      h1[2].style.color = "green";
+
+      const h2 = document.getElementsByTagName("h2");
+      console.log(h2);
+      h2[0].style.backgroundColor = "pink";
+    </script>
+  </body>
+</html>

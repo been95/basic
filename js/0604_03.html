@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="h1">Heading 1<a href="#">LINK</a></h1>
+    <h2 id="h2">Heading 2<a href="#">LINK</a></h2>
+    <h3 id="h3">Heading 3<a href="#">LINK</a></h3>
+
+    <script>
+      const h1 = document.querySelector("#h1");
+      const h2 = document.querySelector("#h2");
+      const h3 = document.querySelector("#h3");
+
+      console.log(h1.innerHTML);
+      console.log(h2.innerText);
+      console.log(h3.textContent);
+
+      h1.innerHTML = "Hello <span>World</span>";
+      h2.innerText = "Hello <span>World</span>";
+      h3.textContent = "Hello <span>World</span>";
+    </script>
+  </body>
+</html>
